@@ -1,10 +1,10 @@
 # Github Battle App
 
-This is a blog application created using ReactJS and Tailwind and hosted on netlify. This app takes two github usernames and based on their number of followers, followings, repositories etc their respective score will be calculated. Based on both scores a winner will be decided.
+This is a github battle application created using ReactJS and Tailwind CSS. User can enter two github usernames and based on their number of followers, followings, repositories etc their respective score will be calculated. Based on both scores a winner will be decided. This application is hosted on netlify.
 
 ## Installation
 
-To use this application on your pc first clone this repository to your PC.
+To use this application on your PC first clone this repository to your PC.
 Install npm packages using the command
 
 ```bash
