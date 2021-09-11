@@ -34,19 +34,19 @@ class Category extends React.Component {
      render() {  
             let lang = this.state.lang;
          return (
-            <main className="px-64 pt-8 py-16">
-                <div className="flex justify-center text-xl font-bold my-4 ">
-                    <h3 className={lang === "all" ? "inline-block cursor-pointer text-red-400 mx-4" : "inline-block cursor-pointer mx-6"} data-id="all" onClick={(e) => this.handleClick(e)}>All</h3>
+            <main className="px-12 lg:px-16 2xl:px-64 pt-8 py-16">
+                <div className="flex flex-col items-center sm:flex-row sm:justify-center text-xl font-bold my-4 ">
+                    <h3 className={lang === "all" ? "inline-block cursor-pointer text-red-600 mx-4" : "inline-block cursor-pointer mx-6"} data-id="all" onClick={(e) => this.handleClick(e)}>All</h3>
 
-                    <h3 className={lang === "javascript" ? "inline-block cursor-pointer text-red-400 mx-6" : "inline-block cursor-pointer mx-6"}  data-id="javascript" onClick={(e) => this.handleClick(e)}>JavaScript</h3> 
+                    <h3 className={lang === "javascript" ? "inline-block cursor-pointer text-red-600 mx-6" : "inline-block cursor-pointer mx-6"}  data-id="javascript" onClick={(e) => this.handleClick(e)}>JavaScript</h3> 
 
-                    <h3 className={lang === "ruby" ? "inline-block cursor-pointer text-red-400 mx-6" : "inline-block cursor-pointer mx-6"} data-id="ruby" onClick={(e) => this.handleClick(e)}>Ruby</h3>
+                    <h3 className={lang === "ruby" ? "inline-block cursor-pointer text-red-600 mx-6" : "inline-block cursor-pointer mx-6"} data-id="ruby" onClick={(e) => this.handleClick(e)}>Ruby</h3>
 
-                    <h3 className={lang === "java" ? "inline-block cursor-pointer text-red-400 mx-6" : "inline-block cursor-pointer mx-6"} data-id="java"  onClick={(e) => this.handleClick(e)}>Java</h3>
+                    <h3 className={lang === "java" ? "inline-block cursor-pointer text-red-600 mx-6" : "inline-block cursor-pointer mx-6"} data-id="java"  onClick={(e) => this.handleClick(e)}>Java</h3>
 
-                    <h3 className={lang === "Css" ? "inline-block cursor-pointer text-red-400 mx-6" : "inline-block cursor-pointer mx-6"} data-id="Css"  onClick={(e) => this.handleClick(e)}>CSS</h3>
+                    <h3 className={lang === "Css" ? "inline-block cursor-pointer text-red-600 mx-6" : "inline-block cursor-pointer mx-6"} data-id="Css"  onClick={(e) => this.handleClick(e)}>CSS</h3>
 
-                    <h3 className={lang === "python" ? "inline-block cursor-pointer text-red-400" : "inline-block cursor-pointer"} data-id="python"  onClick={(e) => this.handleClick(e)}>Python</h3>
+                    <h3 className={lang === "python" ? "inline-block cursor-pointer text-red-600" : "inline-block cursor-pointer"} data-id="python"  onClick={(e) => this.handleClick(e)}>Python</h3>
                 </div>
 
                 

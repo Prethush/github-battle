@@ -56,26 +56,26 @@ class GithubBattle extends React.Component {
 
     render() {
         return (
-            <main className="px-96 mx-auto">
+            <main className="px-40 2xl:px-80 pb-20">
                 <section>
-                    <h1 className="text-center text-4xl mb-12">Instructions</h1>
-                    <div className="flex justify-between">
-                        <div className="flex-35 flex flex-col items-center">
+                    <h1 className="text-center text-4xl pb-12">Instructions</h1>
+                    <div className="flex flex-wrap justify-around">
+                        <div className="flex flex-50  xl:flex-30 flex-col items-center my-3 mr-4">
                             <h3 className="text-center text-2xl">Enter two Github users</h3>
                             <div className={this.props.darkMode ?  "bg-gray-600 h-64  text-center w-64 flex justify-center items-center my-3":"bg-gray-300 h-64  text-center w-64 flex justify-center items-center my-3"}>
                                 <i className="fas fa-users text-9xl text-red-400"></i>
                             </div>
                         </div>
                         
-                        <div className="flex-35 flex flex-col items-center">
+                        <div className="flex flex-50 xl:flex-30 flex-col items-center my-3 mr-4">
                             <h3 className="text-center text-2xl">Battle</h3>
                             <div className={this.props.darkMode ?  "bg-gray-600 h-64  text-center w-64 flex justify-center items-center my-3":"bg-gray-300 h-64  text-center w-64 flex justify-center items-center my-3"}>
                                 <i className="fas fa-fighter-jet text-9xl text-gray-500"></i>
                             </div>
                         </div>
 
-                        <div className="flex-35 flex flex-col items-center">
-                            <h3 className="text-center text-2xl">Enter two Github users</h3>
+                        <div className="flex flex-50 xl:flex-30 flex-col items-center my-3 mr-4">
+                            <h3 className="text-center text-2xl">See the winner</h3>
                             <div className={this.props.darkMode ?  "bg-gray-600 h-64  text-center w-64 flex justify-center items-center my-3":"bg-gray-300 h-64  text-center w-64 flex justify-center items-center my-3"}>
                                 <i className="fas fa-trophy text-9xl text-yellow-400"></i>
                             </div>
@@ -83,9 +83,9 @@ class GithubBattle extends React.Component {
                     </div>
                     
                 </section>
-                <section className="mt-32">
+                <section className="mt-24">
                     <h2 className="text-center text-3xl">Players</h2>
-                    <div className="flex justify-between mt-6">
+                    <div className="flex flex-col items-center justify-center xl:flex-row xl:justify-between mt-6">
                         < Players {...this.state} handleChange={this.hadleChange} handleSubmit={this.handleSubmit} handleKeyPress={this.handleKeyPress} closeUserData={this.closeUserData} darkMode={this.props.darkMode}/>
                     </div>
 
