@@ -19,4 +19,4 @@ npm start
 
 ## Deployment
 
-https://github-battle-kt.netlify.app/
+https://github-battle2-kt.netlify.app/
