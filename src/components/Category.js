@@ -10,7 +10,7 @@ class Category extends React.Component {
         }
     }
 
-    componentDidMount = () => {
+    componentDidMount() {
       this.fetchData();
     }
     
